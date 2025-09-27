@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madyfication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧬 Genetic Detective</h1>
+        <p>Talib sab genetic code deiv, I’ll find the disease!</p>
+
+        <label for="disease-type">Choose Disease Type:</label>
+        <select id="disease-type">
+            <option value="">-- Pick One --</option>
+            <option value="sickle-cell">Sickle Cell</option>
+            <option value="cystic-fibrosis">Cystic Fibrosis</option>
+            <option value="huntington">Huntington’s</option>
+        </select>
+
+        <br><br>
+
+        <label for="dna-code">Paste Genetic Code (e.g. ATCGGTAACC):</label><br>
+        <textarea id="dna-code" rows="4" cols="50" placeholder="Type or paste DNA sequence here..."></textarea>
+
+        <br><br>
+
+        <button id="detect-btn">🔍 Detect Disease!</button>
+
+        <div id="result-box" class="result-box">
+            <!-- AI will put answer here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
